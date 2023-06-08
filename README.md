@@ -35,3 +35,8 @@ ps:本来想做一个界面的，但Python写界面好麻烦www
 同时几乎**每一行代码都有注释**(菜是这样的)
 
 ![开源代码](https://cdnjson.com/images/2023/06/08/image27d960424334db16.png)
+
+### ending
+欢迎关注我的各个平台，或许会有其他小东西更新~
+
+![名片](https://cdnjson.com/images/2023/03/12/image8749fd86705e58b5.png)
