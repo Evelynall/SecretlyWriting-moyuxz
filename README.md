@@ -1,4 +1,6 @@
 # SecretlyWriting-moyuxz
+对更多内容有兴趣，欢迎访问我的[个人主页](https://evelynall.github.io/)
+
 🐟：一款可以上班摸鱼码字的神器软件~（An artifact software that can secretly write at work ~）
 
 这是一款用Python编写的小小小软件，灵感来自于Utools的“摸鱼阅读”。
