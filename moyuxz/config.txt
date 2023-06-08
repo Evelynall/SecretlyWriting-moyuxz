@@ -1,0 +1,4 @@
+position: 53,1012
+background: #262626
+foreground: #8a8a8a
+exitkey: <Control-w>
