@@ -18,7 +18,7 @@ def MouseMove(event):
 def exit(event): 
     # 先保存输入框的内容到text中
     if txt.get():
-        with open('text.txt', 'a') as f:
+        with open(filename, 'a') as f:
             f.write(txt.get() + '\n')  # 获取输入框内容并写入文件
         txt.delete(0, END)  # 清空输入框
     # 获取窗口位置
@@ -35,11 +35,13 @@ def exit(event):
         f.write(f'{foreground}')
         f.write('\nexitkey: ') # 退出快捷键
         f.write(f'{exitkey}')
+        f.write('\nfilename: ') # 退出快捷键
+        f.write(f'{filename}')
     root.destroy()
 
 # 保存输入框内容到text中
 def save_file(event):
-    with open('text.txt', 'a') as f:
+    with open(filename, 'a') as f:
         f.write(txt.get() + '\n')  # 获取输入框内容并写入文件
     txt.delete(0, END)  # 清空输入框
  
@@ -68,6 +70,10 @@ with open('config.txt') as f:
     a = f.readline(9) 
     # 设置退出快捷键（后半段为去除换行符）
     exitkey = f.readline().replace('\r','').replace('\n','')
+    # 读取第四行前10个字符（filename: ）
+    a = f.readline(10) 
+    # 设置退出快捷键（后半段为去除换行符）
+    filename = f.readline().replace('\r','').replace('\n','')
 
 root.config(bg=backgrounds)
 # 设置输入框
