@@ -5,7 +5,7 @@ import tkinter as tk
 def count_chars(filename):
     with open(filename, 'r', encoding='utf-8', errors='ignore') as f:
         text = f.read()
-    text = text.replace(" ", "")  # 移除空格
+    text = text.replace(" ", "").replace("\n", "")  # 移除空格和换行符
     char_count = len(text)
     return char_count
 
